@@ -8,11 +8,9 @@ phase_unwrapping
 """
 
 
-import sys
 import os
 from os.path import join as pjoin
 from os.path import exists as pexists
-# from dicom2bids import *
 import logging
 from PyQt5.QtCore import (QSize,
                           Qt,
@@ -48,20 +46,12 @@ from PyQt5.QtWidgets import (QDesktopWidget,
                              QCheckBox)
 from PyQt5.QtGui import (QFont,
                          QIcon)
-import traceback
-import threading
 import subprocess
 import pandas as pd
 import platform
 import json
-from bids_validator import BIDSValidator
-import time
 import shutil
-import docker
 
-
-# from my_logging import setup_logging
-from tqdm.auto import tqdm
 
 
 def launch(parent, add_info=None):
@@ -316,7 +306,6 @@ class PhaseUnwrappingWorker(QObject):
         self.bids = bids
         self.subjects_and_sessions = subjects_and_sessions
         self.phase = phase
-        self.client = docker.from_env()
 
 
     def run(self):
