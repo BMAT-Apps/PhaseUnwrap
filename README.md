@@ -1,6 +1,6 @@
 # Phase unwrapping pipeline
 
-This phase unwrapping pipeline is useful to unwrap the phase part of a suscptibility-weighted imaging (see figure below). The unwrapped phased image can be used in multiple sclerosis to detect paramagnetic rim lesions (PRLs) that corresponds to chronic active lesions. 
+This pipeline allows to unwrap and filter phase images obtained from susceptibility-based MRI using a previously proposed docker container (“blakedewey/phase_unwrap - Docker Image | Docker Hub,” n.d.). The analysis of unwrapped phase images (in combination with other MRI contrasts) (Marcille et al., 2022) allows to detect Paramagnetic Rim Lesions (PRL), an emerging neuroimaging prognostic biomarker of chronic active inflammation in MS (Absinta et al., 2021, 2019; Maggi et al., 2020). 
 
 ![Phase Unwrapping Pipeline](Readme_pictures/phaseUnwrappingPipeline.png)
 
