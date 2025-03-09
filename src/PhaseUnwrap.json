@@ -1,0 +1,7 @@
+{
+	"name": "Phase Unwrap",
+	"source_code": "PhaseUnwrap.py",
+	"import_name": "PhaseUnwrap",
+	"attr": "PhaseUnwrap",
+	"add_info":{"use_docker":true}
+}
